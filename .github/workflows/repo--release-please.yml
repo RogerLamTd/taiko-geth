@@ -2,8 +2,7 @@ name: Release Please
 
 on:
   push:
-    branches:
-      - taiko
+    branches: [taiko]
 
 permissions:
   contents: write
