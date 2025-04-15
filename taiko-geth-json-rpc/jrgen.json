@@ -12,24 +12,9 @@
   "definitions": {
     "*big.Int": {
       "examples": [
-        {
-          "abs": 10,
-          "neg": false
-        }
+        10000
       ],
-      "properties": {
-        "abs": {
-          "type": "integer"
-        },
-        "neg": {
-          "type": "boolean"
-        }
-      },
-      "required": [
-        "neg",
-        "abs"
-      ],
-      "type": "object"
+      "type": "integer"
     },
     "*math.HexOrDecimal256": {
       "$ref": "#/definitions/*big.Int",

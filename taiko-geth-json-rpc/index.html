@@ -198,23 +198,11 @@
                         </tr>
                         <tr>
                           <td>params.blockID</td>
-                          <td>object</td>
+                          <td>integer</td>
                           <td></td>
                           <td>
                             Hexadecimal or decimal representation of a number.
                           </td>
-                        </tr>
-                        <tr>
-                          <td>params.blockID.abs</td>
-                          <td>integer</td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>params.blockID.neg</td>
-                          <td>boolean</td>
-                          <td></td>
-                          <td></td>
                         </tr>
                       </table>
                     </div>
@@ -230,19 +218,7 @@
                         </tr>
                         <tr>
                           <td>result</td>
-                          <td>object</td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>result.abs</td>
                           <td>integer</td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>result.neg</td>
-                          <td>boolean</td>
                           <td></td>
                           <td></td>
                         </tr>
@@ -258,10 +234,7 @@
   "id": "1234567890",
   "method": "taikoAuth_SetHeadL1Origin",
   "params": {
-    "blockID": {
-      "abs": 10,
-      "neg": false
-    }
+    "blockID": 10000
   }
 }</pre
                     >
@@ -271,10 +244,7 @@
 {
   "jsonrpc": "2.0",
   "id": "1234567890",
-  "result": {
-    "abs": 10,
-    "neg": false
-  }
+  "result": 10000
 }</pre
                     >
                   </div>
@@ -330,19 +300,7 @@
                         </tr>
                         <tr>
                           <td>params.baseFee</td>
-                          <td>object</td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>params.baseFee.abs</td>
                           <td>integer</td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>params.baseFee.neg</td>
-                          <td>boolean</td>
                           <td></td>
                           <td></td>
                         </tr>
@@ -436,10 +394,7 @@
   "id": "1234567890",
   "method": "taikoAuth_TxPoolContent",
   "params": {
-    "baseFee": {
-      "abs": 10,
-      "neg": false
-    },
+    "baseFee": 10000,
     "beneficiary": "0x123456",
     "blockMaxGasLimit": 10000,
     "locals": [
@@ -520,19 +475,7 @@
                         </tr>
                         <tr>
                           <td>params.baseFee</td>
-                          <td>object</td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>params.baseFee.abs</td>
                           <td>integer</td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>params.baseFee.neg</td>
-                          <td>boolean</td>
                           <td></td>
                           <td></td>
                         </tr>
@@ -632,10 +575,7 @@
   "id": "1234567890",
   "method": "taikoAuth_TxPoolContentWithMinTip",
   "params": {
-    "baseFee": {
-      "abs": 10,
-      "neg": false
-    },
+    "baseFee": 10000,
     "beneficiary": "0x123456",
     "blockMaxGasLimit": 10000,
     "locals": [
@@ -722,19 +662,7 @@
                         </tr>
                         <tr>
                           <td>params.l1Origin.blockID</td>
-                          <td>object</td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>params.l1Origin.blockID.abs</td>
                           <td>integer</td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>params.l1Origin.blockID.neg</td>
-                          <td>boolean</td>
                           <td></td>
                           <td></td>
                         </tr>
@@ -746,19 +674,7 @@
                         </tr>
                         <tr>
                           <td>params.l1Origin.l1BlockHeight</td>
-                          <td>object</td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>params.l1Origin.l1BlockHeight.abs</td>
                           <td>integer</td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>params.l1Origin.l1BlockHeight.neg</td>
-                          <td>boolean</td>
                           <td></td>
                           <td></td>
                         </tr>
@@ -788,19 +704,7 @@
                         </tr>
                         <tr>
                           <td>result.blockID</td>
-                          <td>object</td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>result.blockID.abs</td>
                           <td>integer</td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>result.blockID.neg</td>
-                          <td>boolean</td>
                           <td></td>
                           <td></td>
                         </tr>
@@ -812,19 +716,7 @@
                         </tr>
                         <tr>
                           <td>result.l1BlockHeight</td>
-                          <td>object</td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>result.l1BlockHeight.abs</td>
                           <td>integer</td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>result.l1BlockHeight.neg</td>
-                          <td>boolean</td>
                           <td></td>
                           <td></td>
                         </tr>
@@ -847,15 +739,9 @@
   "method": "taikoAuth_UpdateL1Origin",
   "params": {
     "l1Origin": {
-      "blockID": {
-        "abs": 10,
-        "neg": false
-      },
+      "blockID": 10000,
       "l1BlockHash": "0x123456",
-      "l1BlockHeight": {
-        "abs": 10,
-        "neg": false
-      },
+      "l1BlockHeight": 10000,
       "l2BlockHash": "0x123456"
     }
   }
@@ -868,15 +754,9 @@
   "jsonrpc": "2.0",
   "id": "1234567890",
   "result": {
-    "blockID": {
-      "abs": 10,
-      "neg": false
-    },
+    "blockID": 10000,
     "l1BlockHash": "0x123456",
-    "l1BlockHeight": {
-      "abs": 10,
-      "neg": false
-    },
+    "l1BlockHeight": 10000,
     "l2BlockHash": "0x123456"
   }
 }</pre
@@ -1004,19 +884,7 @@
                         </tr>
                         <tr>
                           <td>result.blockID</td>
-                          <td>object</td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>result.blockID.abs</td>
                           <td>integer</td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>result.blockID.neg</td>
-                          <td>boolean</td>
                           <td></td>
                           <td></td>
                         </tr>
@@ -1028,19 +896,7 @@
                         </tr>
                         <tr>
                           <td>result.l1BlockHeight</td>
-                          <td>object</td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>result.l1BlockHeight.abs</td>
                           <td>integer</td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>result.l1BlockHeight.neg</td>
-                          <td>boolean</td>
                           <td></td>
                           <td></td>
                         </tr>
@@ -1070,15 +926,9 @@
   "jsonrpc": "2.0",
   "id": "1234567890",
   "result": {
-    "blockID": {
-      "abs": 10,
-      "neg": false
-    },
+    "blockID": 10000,
     "l1BlockHash": "0x123456",
-    "l1BlockHeight": {
-      "abs": 10,
-      "neg": false
-    },
+    "l1BlockHeight": 10000,
     "l2BlockHash": "0x123456"
   }
 }</pre
@@ -1135,23 +985,11 @@
                         </tr>
                         <tr>
                           <td>params.blockID</td>
-                          <td>object</td>
+                          <td>integer</td>
                           <td></td>
                           <td>
                             Hexadecimal or decimal representation of a number.
                           </td>
-                        </tr>
-                        <tr>
-                          <td>params.blockID.abs</td>
-                          <td>integer</td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>params.blockID.neg</td>
-                          <td>boolean</td>
-                          <td></td>
-                          <td></td>
                         </tr>
                       </table>
                     </div>
@@ -1173,19 +1011,7 @@
                         </tr>
                         <tr>
                           <td>result.blockID</td>
-                          <td>object</td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>result.blockID.abs</td>
                           <td>integer</td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>result.blockID.neg</td>
-                          <td>boolean</td>
                           <td></td>
                           <td></td>
                         </tr>
@@ -1197,19 +1023,7 @@
                         </tr>
                         <tr>
                           <td>result.l1BlockHeight</td>
-                          <td>object</td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>result.l1BlockHeight.abs</td>
                           <td>integer</td>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>result.l1BlockHeight.neg</td>
-                          <td>boolean</td>
                           <td></td>
                           <td></td>
                         </tr>
@@ -1231,10 +1045,7 @@
   "id": "1234567890",
   "method": "taiko_L1OriginByID",
   "params": {
-    "blockID": {
-      "abs": 10,
-      "neg": false
-    }
+    "blockID": 10000
   }
 }</pre
                     >
@@ -1245,15 +1056,9 @@
   "jsonrpc": "2.0",
   "id": "1234567890",
   "result": {
-    "blockID": {
-      "abs": 10,
-      "neg": false
-    },
+    "blockID": 10000,
     "l1BlockHash": "0x123456",
-    "l1BlockHeight": {
-      "abs": 10,
-      "neg": false
-    },
+    "l1BlockHeight": 10000,
     "l2BlockHash": "0x123456"
   }
 }</pre
