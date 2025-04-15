@@ -40,6 +40,3 @@ jobs:
               publish_dir: ./ # Set this to where your `index.html` is located
               publish_branch: gh-pages
               destination_dir: taiko-geth-json-rpc
-    
-
-    
