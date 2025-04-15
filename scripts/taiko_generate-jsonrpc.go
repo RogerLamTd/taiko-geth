@@ -76,7 +76,7 @@ func parseParamNamesFromFile(filename string) (map[string][]string, map[string]s
 								params = append(params, name.Name)
 							}
 						} else {
-							params = append(params, fmt.Sprintf("%s", exprToString(field.Type)))
+							params = append(params, exprToString(field.Type))
 						}
 					}
 				}
