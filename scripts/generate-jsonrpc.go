@@ -279,15 +279,8 @@ func main() {
 				"required": []string{"TxList", "EstimatedGasUsed", "BytesLength"},
 			},
 			"*big.Int": map[string]interface{}{
-				"type": "object",
-				"properties": map[string]interface{}{
-					"neg": map[string]interface{}{"type": "boolean"},
-					"abs": map[string]interface{}{"type": "integer"},
-				},
-				"required": []string{"neg", "abs"},
-				"examples": []map[string]interface{}{
-					{"abs": 10, "neg": false},
-				},
+				"type":     "integer",
+				"examples": []int{10000},
 			},
 			"*rawdb.L1Origin": map[string]interface{}{
 				"type": "object",
